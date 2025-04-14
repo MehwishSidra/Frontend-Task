@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunnyside</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Fraunces', serif;
+    }
+
+    .hero {
+      background-color: #3EBEFF;
+      height: 90vh;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 4rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .contact-btn {
+      background: white;
+      color: black;
+      padding: 0.5rem 1.2rem;
+      border-radius: 25px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .hero-content h2 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .grid-item {
+      width: 50%;
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      text-align: center;
+    }
+
+    .contact-btn-font{
+
+        color: black;
+    }
+    .grid-item img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .text-block h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .text-block p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .text-block a {
+      margin-top: 1rem;
+      display: inline-block;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Background colors per block (customize as needed) */
+    .yellow-bg { background-color: #FDEB77; }
+    .red-bg { background-color: #FD877A; }
+    .mint-bg { background-color: #D3F5EB; }
+    .sky-bg { background-color: #C2E9FF; }
+    .white-bg { background-color: white; }
+
+    @media (max-width: 768px) {
+      .grid-item {
+        width: 100%;
+      }
+
+      .hero-content h2 {
+        font-size: 1.5rem;
+      }
+
+      .navbar {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <h1 class="logo">sunnyside</h1>
+      <ul class="nav-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a class="contact-btn" href="#"><span class="contact-btn-font">Contact</span></a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h2>WE ARE CREATIVES</h2>
+    </div>
+  </header>
+
+  <section class="grid">
+    <div class="grid-item white-bg">
+      <div class="text-block">
+        <h2>Transform your brand</h2>
+        <p>We are a full-service creative agency specializing in helping brands grow fast.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+    <div class="grid-item yellow-bg">
+      <img src="images/Capture.PNG.5" alt="Egg Image">
+    </div>
+
+    <div class="grid-item red-bg">
+      <img src="images/Capture.PNG.4" alt="Glass Image">
+    </div>
+    <div class="grid-item white-bg">
+      <div class="text-block">
+        <h2>Stand out to the right audience</h2>
+        <p>Using a collaborative formula of designers, researchers, and copywriters, we’ll build and extend your brand.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+
+    <div class="grid-item mint-bg">
+      <img src="data:image/jpeg;base64,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" alt="Cherries Image">
+      <div class="text-block">
+        <h2>Graphic Design</h2>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message.</p>
+      </div>
+    </div>
+
+    <div class="grid-item sky-bg">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJgSIH0UE6eHXcyeUzOYqDIH37bqTXY25Fnw&s" alt="Orange Image">
+      <div class="text-block">
+        <h2>Photography</h2>
+        <p>Increase your credibility by getting the most stunning, high-quality photos of your business.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials Section -->
+<section style="padding: 5rem 2rem; text-align: center;">
+    <h3 style="letter-spacing: 3px; font-size: 0.9rem; color: gray; margin-bottom: 3rem;">CLIENT TESTIMONIALS</h3>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem;">
+      
+      <div style="max-width: 300px;">
+        <img src="https://i.pravatar.cc/80?img=20" alt="Emily" style="border-radius: 50%; margin-bottom: 1.5rem;">
+        <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <p><strong>Emily R.</strong><br><span style="font-size: 0.85rem; color: gray;">Marketing Director</span></p>
+      </div>
+      
+      <div style="max-width: 300px;">
+        <img src="https://i.pravatar.cc/80?img=32" alt="Thomas" style="border-radius: 50%; margin-bottom: 1.5rem;">
+        <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <p><strong>Thomas S.</strong><br><span style="font-size: 0.85rem; color: gray;">Chief Operating Officer</span></p>
+      </div>
+      
+      <div style="max-width: 300px;">
+        <img src="https://i.pravatar.cc/80?img=45" alt="Jennie" style="border-radius: 50%; margin-bottom: 1.5rem;">
+        <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <p><strong>Jennie F.</strong><br><span style="font-size: 0.85rem; color: gray;">Business Owner</span></p>
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-- Colorful Image Strip -->
+  <section style="display: flex; flex-wrap: wrap;">
+    <img src="images/Capture.PNG" alt="Milk Bottles" style="flex: 1; width: 25%; height: auto;">
+    <img src="images/Capture.PNG.1" alt="Orange Plate" style="flex: 1; width: 25%; height: auto;">
+    <img src="images/Capture.PNG.2" alt="Ice Cream Cone" style="flex: 1; width: 25%; height: auto;">
+    <img src="images/Capture.PNG.3" alt="Sugar Cubes" style="flex: 1; width: 25%; height: auto;">
+  </section>
+  
+  <!-- Footer -->
+  <footer style="background-color: #90D4C5; text-align: center; padding: 3rem 1rem;">
+    <h2 style="color: #2C7566; margin-bottom: 2rem;">sunnyside</h2>
+    <div style="margin-bottom: 2rem;">
+      <a href="#" style="margin: 0 1rem; color: #2C7566; text-decoration: none;">About</a>
+      <a href="#" style="margin: 0 1rem; color: #2C7566; text-decoration: none;">Services</a>
+      <a href="#" style="margin: 0 1rem; color: #2C7566; text-decoration: none;">Projects</a>
+    </div>
+    <div style="margin-top: 1rem;">
+      <img src="https://img.icons8.com/ios-filled/25/2C7566/facebook-new.png" style="margin: 0 10px;">
+      <img src="https://img.icons8.com/ios-filled/25/2C7566/instagram-new.png" style="margin: 0 10px;">
+      <img src="https://img.icons8.com/ios-filled/25/2C7566/twitter.png" style="margin: 0 10px;">
+      <img src="https://img.icons8.com/ios-filled/25/2C7566/pinterest--v1.png" style="margin: 0 10px;">
+    </div>
+  </footer>
+  
+</body>
+</html>
